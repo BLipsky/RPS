@@ -40,34 +40,51 @@
   </head>
   <body>
 
-    <div class="container-fluid mt-5 full">
+      <!-- Intro Div -->
+    <div class="container-fluid mt-5 full" id="fullOne">
     <div class="top">
     <div class="row">
         <h1>Rock Paper Scissors!</h1>
     </div>
     <div class="row">
-    <div col-6-sm col-6-lg>
+    <div class="col-6-sm col-6-lg">
         <label for="difSelector" class="form-label">Difficulty Selector:</label>
-        <select class="form-select" id="serviceQuality">
+        <select class="form-select rob" id="difSelector">
         <option place></option>
         <option value="difOne">Easy</option>
         <option value="difTwo">Normal</option>
         <option value="difThree">Hard</option>
     </select>
     </div>
-    <div class="mid">
-    <button class="btn btn-success bord" onclick=display()>Choose</button>
+    <br><br><br><br>
+    <div class="col-6-sm col-6-lg">
+      <label for="difSelector" class="form-label">CPU Name:</label>
+        <input type="text " class="form-control rob" id="comName" placeholder="Enter Name for the CPU" />
     </div>
-
-
+  </div>
+  <br>
+  <div class="col-6-sm col-6-lg">
+    <label for="difSelector" class="form-label">Player Name:</label>
+      <input type="text " class="form-control rob" id="plaName" placeholder="Enter Your Display Name" />
+  </div>
 </div>
 
+    <br><br><br><br>
+    <div class="mid">
+    <button class="btn bord" onclick=display()>Choose</button>
     </div>
-    </div>
-    </div>
-    </div>
+</div>
+      
 
 
+    <!-- Game Div -->
+    <div>
+        <h1 id="displayPlayerName"></h1>
+  </div>
+  <div>
+    <h1 id="displayComputerName"></h1>
+  </div>
+  
 
 
 
