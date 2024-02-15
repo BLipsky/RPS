@@ -5,10 +5,13 @@ let disComName
 function display() {
 
     disComName = document.getElementById('comName').value
-    document.getElementById('displayComputerName').textContent = disComName
+    document.getElementById('displayComputerName').textContent = 'CPU Name' 
+    document.getElementById('displayComputerName1').textContent = disComName
 
     disName = document.getElementById('plaName').value
-    document.getElementById('displayPlayerName').textContent = disName
+    document.getElementById('displayPlayerName').textContent = 'Player Name' 
+    document.getElementById('displayPlayerName1').textContent = disName
+
 
 
     document.getElementById('fullOne').classList.add("d-none")
@@ -24,8 +27,19 @@ let responseOneArray = [
     'Paper',
     'Scissors'
     ]
-    
 
+function responseShow(){
+
+let response = responseTwoFunction()
+
+if (humanRes === 'Rock'){
+    return 'Paper'
+} else if (humanRes === 'Paper'){
+    return 'Scissors'
+} else if (humanRes === 'Scissors'){
+    return 'Rock'
+}    
+}
 
 
 

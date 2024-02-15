@@ -24,9 +24,43 @@
    text-align: center;
    width: 50%;
    background-color: white;
+   margin-top: 5vw;
   }
 
   .rob {
     width: 75%;
     margin-left: 10vw;
+  }
+
+  .topright {
+    position: absolute;
+    width: 40%;
+    top: 20px;
+    left: 5px;
+    text-align: center;
+  }
+  .topright1 {
+    position: absolute;
+    width: 40%;
+    top: 50px;
+    left: 5px;
+    text-align: center;
+  }
+  .topleft {
+    position: absolute;
+    width: 40%;
+    top: 20px;
+    right: 5px;
+    text-align: center;
+  }
+  .topleft1 {
+    position: absolute;
+    width: 40%;
+    top: 50px;
+    right: 5px;
+    text-align: center;
+  }
+  .main {
+    text-align: center;
+    margin-top: 25vw;
   }
