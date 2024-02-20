@@ -58,13 +58,13 @@
     </div>
     <br><br><br><br>
     <div class="col-6-sm col-6-lg">
-      <label for="difSelector" class="form-label">CPU Name:</label>
+      <label for="comName" class="form-label">CPU Name:</label>
         <input type="text " class="form-control rob" id="comName" placeholder="Enter Name for the CPU" />
     </div>
   </div>
   <br>
   <div class="col-6-sm col-6-lg">
-    <label for="difSelector" class="form-label">Player Name:</label>
+    <label for="plaName" class="form-label">Player Name:</label>
       <input type="text " class="form-control rob" id="plaName" placeholder="Enter Your Display Name" />
   </div>
 </div>
@@ -85,11 +85,14 @@
     <div class="topright1"><h1 id="displayComputerName1"></h1></div>
 
     <div class="container-fluid main">
-      <label for="difSelector" class="form-label">Rock, Paper, Or Scissors!</label>
-        <input type="text " class="form-control rob" id="comName" placeholder="Choose Rock, Paper, or Scissors" />
-    
-    <div class="res">
+      <label for="humanRes" class="form-label">Rock, Paper, Or Scissors!</label>
+        <input type="text " class="form-control rob" id="humanRes" placeholder="Choose Rock, Paper, or Scissors" />
+        
+        <button id="humanResponse" class="btn bord" onclick="responseShow()">Lock In Your Answer!</button>
+    </div>
 
+    <div class="res">
+      <p id="resOne"></p>
 
     </div>
     

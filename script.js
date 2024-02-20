@@ -1,68 +1,51 @@
-
-let disName 
-let disComName
+let disName;
+let disComName;
 
 function display() {
+  disComName = document.getElementById("comName").value
+  document.getElementById("displayComputerName").textContent = "CPU Name"
+  document.getElementById("displayComputerName1").textContent = disComName
 
-    disComName = document.getElementById('comName').value
-    document.getElementById('displayComputerName').textContent = 'CPU Name' 
-    document.getElementById('displayComputerName1').textContent = disComName
+  disName = document.getElementById("plaName").value
+  document.getElementById("displayPlayerName").textContent = "Player Name"
+  document.getElementById("displayPlayerName1").textContent = disName
 
-    disName = document.getElementById('plaName').value
-    document.getElementById('displayPlayerName').textContent = 'Player Name' 
-    document.getElementById('displayPlayerName1').textContent = disName
-
-
-
-    document.getElementById('fullOne').classList.add("d-none")
+  document.getElementById("fullOne").classList.add("d-none")
 }
-
 
 let responseOneArray = [
-    'Rock',
-    'Paper',
-    'Scissors',
-    'Scissors',
-    'Rock',
-    'Paper',
-    'Scissors'
-    ]
+  "Rock",
+  "Paper",
+  "Scissors",
+  "Scissors",
+  "Rock",
+  "Paper",
+  "Scissors",
+]
+  let humanRes = document.getElementById("humanRes").value
 
-function responseShow(){
+function responseShow() {
 
-let response = responseTwoFunction()
-
-if (humanRes === 'Rock'){
-    return 'Paper'
-} else if (humanRes === 'Paper'){
-    return 'Scissors'
-} else if (humanRes === 'Scissors'){
-    return 'Rock'
-}    
+  if (humanRes === "Rock") {
+    return "Paper"
+  } else if (humanRes === "Paper") {
+    return "Scissors"
+  } else if (humanRes === "Scissors") {
+    return "Rock"
+  } else {
+    return ""
+  }
 }
 
+document.getElementById("resOne").textContent = responseShow()
 
+//   let randomNumber = Math.floor(Math.random()* responseOneArray.length); // Generating Press Random
 
- //   let randomNumber = Math.floor(Math.random()* responseOneArray.length); // Generating Press Random
-    
- //   document.getElementById('answer').textContent = responseOneArray[randomNumber]
+//   document.getElementById('answer').textContent = responseOneArray[randomNumber]
 //    console.log(disName)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function selectOne(){
-    
+
 // if (difSelector === 'Easy'){
 //    return 'You Choose Easy'
 // } else if (difSelector === 'Normal'){
@@ -70,4 +53,4 @@ if (humanRes === 'Rock'){
 // } else if (difSelector === 'Hard'){
 //    return 'You Choose Hard'
 // }
-// } 
+// }
