@@ -32,7 +32,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script scr="script.js"></script>
+    <script Idontknowwhybutthisstillworksliterallyanythingbutsrcworks="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
       rel="stylesheet"
@@ -71,7 +71,7 @@
 
     <br><br><br><br>
     <div class="mid">
-    <button class="btn bord" onclick=display()>Choose</button>
+    <button class="btn bord" onclick="display()">Choose</button>
     </div>
 </div>
       
@@ -79,23 +79,26 @@
 
     <!-- Game Div -->
     <div class="topleft"><h1 id="displayPlayerName"></h1></div>
-    <div class="topleft1"><h1 id="displayPlayerName1"></h1></div>
+    <div class="topleft1"><h2 id="displayPlayerName1"></h2></div>
+    <div class="topleft2"><h1 id="displayScoreName"></h1></div>
 
     <div class="topright"><h1 id="displayComputerName"></h1></div>
-    <div class="topright1"><h1 id="displayComputerName1"></h1></div>
+    <div class="topright1"><h2 id="displayComputerName1"></h2></div>
+    <div class="topleft2"><h1 id="displayScoreName1"></h1></div>
 
-    <div class="container-fluid main">
+    <div class="container-fluid main" id="gameDiv">
       <label for="humanRes" class="form-label">Rock, Paper, Or Scissors!</label>
         <input type="text " class="form-control rob" id="humanRes" placeholder="Choose Rock, Paper, or Scissors" />
-        
-        <button id="humanResponse" class="btn bord" onclick="responseShow()">Lock In Your Answer!</button>
-    </div>
+        <br>
+        <button id="lockInButton" class="btn bord">Lock In Your Answer!</button>
+        <p id="killMe"></p>
 
     <div class="res">
       <p id="resOne"></p>
 
     </div>
-    
+  </div>
+
     
     
     
