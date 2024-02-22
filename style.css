@@ -80,6 +80,5 @@
     margin-top: 25vw;
   }
   .done {
-    font-weight: 600;
-    text-shadow: 2vw 2vw 2vw 2vw red;
+    text-shadow: 0vw 0vw 2vw red;
   }
