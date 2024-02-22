@@ -14,12 +14,11 @@ function display() {
 
   document.getElementById("fullOne").classList.add("d-none");
   document.getElementById("gameDiv").classList.remove("d-none");
-
-};
+}
 
 function responseNew() {
-  let humanRes = document.getElementById("humanRes").value
-  computerValue++
+  let humanRes = document.getElementById("humanRes").value;
+  computerValue++;
   document.getElementById("displayScoreName").textContent = computerValue;
 
   if (humanRes === "Rock") {
@@ -30,24 +29,20 @@ function responseNew() {
     return "Rock";
   } else {
     return "No Answer";
-  }  
-
-}
-
-document.getElementById("lockInButton").addEventListener("click", function() {
-  document.getElementById("resOne").textContent = responseNew();
-});
-
-function killMe() {
-  if (computerValue === 5){
-  return "Game Over!";
-  } else {
-    return ""
   }
-
 }
-  document.getElementById("killMe").textContent = killMe()
 
+document.getElementById("lockInButton").addEventListener("click", function () {
+  document.getElementById("resOne").textContent = responseNew();
+  
+  // Check if the game is over
+  if (computerValue === 5) {
+    document.getElementById("gameOver").textContent = "Game Over!";
+    document.getElementById("humanRes").classList.add("d-none");
+    document.getElementById("lockInButton").classList.add("d-none");
+    document.getElementById("gameOver").classList.add("done"); 
+  }
+});
 
 let responseOneArray = [
   "Rock",
@@ -58,18 +53,17 @@ let responseOneArray = [
   "Paper",
   "Scissors",
 ];
-   let randomNumber = Math.floor(Math.random()* responseOneArray.length); // Generating Press Random
+let randomNumber = Math.floor(Math.random() * responseOneArray.length); 
 
-   document.getElementById('answer').textContent = responseOneArray[randomNumber]
-    console.log(disName)
+document.getElementById("answer").textContent = responseOneArray[randomNumber];
+console.log(disName);
 
- function selectOne(){
-
- if (difSelector === 'Easy'){
-    return 'You Choose Easy'
- } else if (difSelector === 'Normal'){
-   return 'You Choose Normal'
- } else if (difSelector === 'Hard'){
-    return 'You Choose Hard'
- }
- }
+function selectOne() {
+  if (difSelector === "Easy") {
+    return "You Choose Easy";
+  } else if (difSelector === "Normal") {
+    return "You Choose Normal";
+  } else if (difSelector === "Hard") {
+    return "You Choose Hard";
+  }
+}

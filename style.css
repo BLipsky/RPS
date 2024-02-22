@@ -79,3 +79,7 @@
     text-align: center;
     margin-top: 25vw;
   }
+  .done {
+    font-weight: 600;
+    text-shadow: 2vw 2vw 2vw 2vw red;
+  }
