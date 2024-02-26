@@ -5,28 +5,27 @@ let computerValue = 0;
 
 function display() {
   disComName = document.getElementById("comName").value;
-  document.getElementById("displayComputerName").textContent = "CPU Name";
+  document.getElementById("displayComputerName").textContent = "Away Team";
   document.getElementById("displayComputerName1").textContent = disComName;
 
   disName = document.getElementById("plaName").value;
-  document.getElementById("displayPlayerName").textContent = "Player Name";
+  document.getElementById("displayPlayerName").textContent = "Home Team";
   document.getElementById("displayPlayerName1").textContent = disName;
 
   document.getElementById("fullOne").classList.add("d-none");
   document.getElementById("gameDiv").classList.remove("d-none");
 }
-
 function responseNew() {
   let humanRes = document.getElementById("humanRes").value;
   computerValue++;
   document.getElementById("displayScoreName").textContent = computerValue;
 
-  if (humanRes === "Rock") {
-    return "Paper";
-  } else if (humanRes === "Paper") {
-    return "Scissors";
-  } else if (humanRes === "Scissors") {
-    return "Rock";
+  if (humanRes === "Run") {
+    return "Fumble!";
+  } else if (humanRes === "Pass") {
+    return "Interception!";
+  } else if (humanRes === "Play Action") {
+    return "Turn Over on Downs!";
   } else {
     return "No Answer";
   }
@@ -60,10 +59,10 @@ console.log(disName);
 
 function selectOne() {
   if (difSelector === "Easy") {
-    return "You Choose Easy";
+    return easyOne;
   } else if (difSelector === "Normal") {
-    return "You Choose Normal";
+    return normalOne;
   } else if (difSelector === "Hard") {
-    return "You Choose Hard";
+    return hardOne;
   }
 }

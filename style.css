@@ -4,19 +4,25 @@
  }
 
   .bord {
-   box-shadow: 0vw 0vw 4vw 0vw rgb(0, 16, 94); 
    width: 50%;
-   margin: 2vw;
+   margin-top: 5vw;
+   margin-bottom: 20vw;
    text-align: center;
-   background-color: blue;
    color: white;
    font-weight: 500;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    height: 20vw;
+    background-image: url("btn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50vw;
+    font-size: 5vw;
+    text-shadow: 0vw 0vw 2vw white;
  }
 
   .res {
-   border: 3px solid black;
+   border: 3px solid rgb(255, 255, 255);
    padding: 2vw;
    margin-left: 25vw;
    margin-right: 15vw;
@@ -81,4 +87,41 @@
   }
   .done {
     text-shadow: 0vw 0vw 2vw red;
+  }
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgb(0, 149, 255);
+  }
+  .titlee {
+    color: rgb(255, 255, 255);
+    text-shadow: 0vw 0vw 2vw white;
+  }
+  .whi {
+    color: white;
+    text-shadow: 0vw 0vw 2vw black;
+  }
+  .field {
+    background-image:url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    z-index: -100;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 500px;
+    height: 100vw;
+    right: 0vw;
+    position: absolute;
+  }
+  .z1 {
+    z-index: 1000;
+  }
+  .cloud1 {
+    z-index: -500;
+    background-image: url("Cloud1.png");
+    position: fixed;
+    top: 2vw;
   }
