@@ -38,33 +38,33 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="dope" id="body">
 
       <!-- Intro Div -->
-    <div class="z1 container-fluid mt-5 full" id="fullOne">
+    <div class="z1 container-fluid mt-5 full new" id="fullOne">
     <div class="top">
     <div class="row titlee">
-        <h1>Run, Pass, or Play Action!</h1>
+        <h1>Rock, Paper, Scissors!</h1>
     </div>
     <div class="row">
     <div class="col-6-sm col-6-lg">
         <label for="difSelector" class="form-label titlee">Difficulty Selector:</label>
         <select class="form-select rob" id="difSelector">
         <option place></option>
-        <option value="difOne">1969 Pittsburgh Steelers (1-13)</option>
-        <option value="difTwo">2022 Pittsburgh Steelers (9-8)</option>
-        <option value="difThree">1978 Pittsburgh Steelers (14-2)</option>
+        <option value="difOne">Easy</option>
+        <option value="difTwo">Normal</option>
+        <option value="difThree">Hard</option>
     </select>
     </div>
     <div class="col-6-sm col-6-lg">
-      <label for="comName" class="form-label titlee">Away Team Name:</label>
-        <input type="text " class="form-control rob" id="comName" placeholder="Enter Name for the Visiting Team" />
+      <label for="comName" class="form-label titlee">CPU Name:</label>
+        <input type="text " class="form-control rob" id="comName" placeholder="Enter Name for the Computer" />
     </div>
   </div>
   <br>
   <div class="col-6-sm col-6-lg">
-    <label for="plaName" class="form-label titlee">Home Team Name:</label>
-      <input type="text " class="form-control rob" id="plaName" placeholder="Enter Name for the Home Team" />
+    <label for="plaName" class="form-label titlee">Player Name:</label>
+      <input type="text " class="form-control rob" id="plaName" placeholder="Enter Name for the Player" />
   </div>
 </div>
 
@@ -76,6 +76,7 @@
 
 
     <!-- Game Div -->
+    <div id="new" class="new">
     <div class="topleft"><h1 id="displayPlayerName"></h1></div>
     <div class="topleft1"><h2 id="displayPlayerName1"></h2></div>
     <div class="topleft2"><h1 id="displayScoreName"></h1></div>
@@ -85,25 +86,39 @@
     <div class="topleft2"><h1 id="displayScoreName1"></h1></div>
 
     <div class="container-fluid main" id="gameDiv">
-      <label for="humanRes" class="form-label">Run, Pass, or Play Action!</label>
-        <input type="text " class="form-control rob" id="humanRes" placeholder="Choose Run, Pass, or Block" />
+      <label for="humanRes" class="form-label">Rock, Paper, Scissors!</label>
+        <input type="text " class="form-control rob" id="humanRes" placeholder="Choose Rock, Paper, or Scissors" />
         <br>
-        <button id="lockInButton" class="btn bord">Hike the Ball!</button>
+        <button id="lockInButton" class="btn bord">Lock In Your Answer!</button>
       <h1 id="gameOver"></h1>
 
-    <div class="res">
+    <div id="resTwo" class="res">
       <p id="resOne"></p>
+      <div id="bot"class="bot">.</div>
 
+</div>
     </div>
   </div>
-
-    
-    
-    
       </div>
+    <button class="" onclick="reload()">Try Again</button>
 
-<div class="field">.</div>
-<div class="cloud1">.</div>
+    <div class="foot">.
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook-f icon"></i>    </a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter icon"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+      <li>
+        <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+    </ul>
+    </div>
 
 
 
