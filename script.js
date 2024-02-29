@@ -5,8 +5,7 @@ document.getElementById("new").classList.add("d-none");
 document.getElementById("try").classList.add("d-none");
 let computerValue = 0;
 let humanValue = 0;
-
-
+console.log(hardOne())
 //Select Difficulty
 
 function selectOne() {
