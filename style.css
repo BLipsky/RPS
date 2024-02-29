@@ -110,8 +110,8 @@
     margin: 2vw;
     padding: 2vw;
     padding-bottom: 20vw;
-
     border-radius: 2vw;
+    width: 96%;
   }
   .new2 {
     background-image:radial-gradient(rgb(0, 0, 0), rgb(46, 0, 0), rgb(0, 0, 0));
@@ -119,23 +119,13 @@
     padding: 2vw;
     height: 500vw;
   }
-  .bot {
-    background-image: url("Bot.png");
-    padding: 0vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30vw;
-    left: 20vw;
+  .new3 {
+    background-image:radial-gradient(rgb(255, 255, 255), rgb(44, 174, 0), rgb(255, 255, 255));
+    margin: 0vw;
+    padding: 2vw;
+    height: 500vw;
   }
-  .bot2 {
-    background-image: url("BotTalk.png");
-    padding: 0vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 35vw;
-    left: 20vw;
-  }
-.foot {
+  .foot {
 background-image:radial-gradient(white, rgb(255, 239, 201), rgb(255, 248, 218));
 padding: 10vw;
 color: rgb(255, 252, 249);
@@ -147,8 +137,12 @@ width: 100%;
 .dope {
   overflow-y: hidden;
 }
-
-
+.try {
+  background-color: white;
+  border: .5vw solid gold;
+  border-radius: 2vw;
+  box-shadow: 0vw 0vw 5vw 4vw gold;
+}
 
 
 
