@@ -5,18 +5,35 @@ let disComName;
 document.getElementById("gameDiv").classList.add("d-none");
 document.getElementById("new").classList.add("d-none");
 document.getElementById("try").classList.add("d-none");
+document.getElementById("body").classList.add("body1");
+
 let computerValue = 0;
 let humanValue = 0;
 let diffPickerDrpDwn = document.querySelector("#difSelector");
-//Select Difficulty
+const el = document.querySelector('.click')
+const menu = document.querySelector('.menu');
 
+//Popup (This is all grabbed from online just a cool function)
+
+el.onclick = function() {
+  menu.classList.toggle("showmenu");
+}
+
+window.onclick = function(e) {
+  if (!e.classList.contains('menu') || !e.classList.contains('menu_item')) {
+    menu.removeClass('showmenu');
+  }
+}
+
+// Select Difficulty
 function selectOne() {
+  let difSelector = diffPickerDrpDwn.value; // Get the selected difficulty level
   if (difSelector === "difOne") {
     easyOne();
   } else if (difSelector === "difTwo") {
-    return normalOne();
+    normalOne();
   } else if (difSelector === "difThree") {
-    return hardOne();
+    hardOne();
   }
 }
 
@@ -37,6 +54,8 @@ function display() {
   document.getElementById("fullOne").classList.add("d-none");
   document.getElementById("gameDiv").classList.remove("d-none");
   document.getElementById("new").classList.remove("d-none");
+  document.getElementById("bttn").classList.add("d-none");
+
 }
 
 document.getElementById("lockInButton").addEventListener("click", lockInAnswer);
@@ -118,7 +137,6 @@ function endGame(message) {
 }
 
 //Normal Option
-
 function normalOne() {
   let responseOneArray = [
     "Rock",
@@ -130,8 +148,33 @@ function normalOne() {
     "Scissors",
   ];
   let randomNumber = Math.floor(Math.random() * responseOneArray.length);
-
-  document.getElementById("answer").textContent =
-    responseOneArray[randomNumber];
-  console.log(disName);
+  let computerChoice = responseOneArray[randomNumber]; // Get a random choice from the array
+  let humanRes = document.getElementById("humanRes").value; // Get the human's choice
+  
+  if ((computerChoice === "Rock" && humanRes === "Scissors") ||
+      (computerChoice === "Paper" && humanRes === "Rock") ||
+      (computerChoice === "Scissors" && humanRes === "Paper")) {
+    // Computer wins
+    computerValue++;
+  } else if ((computerChoice === "Rock" && humanRes === "Paper") ||
+             (computerChoice === "Paper" && humanRes === "Scissors") ||
+             (computerChoice === "Scissors" && humanRes === "Rock")) {
+    // Human wins
+    humanValue++;
+  }
+  
+  // Update the displayed scores
+  document.getElementById("displayScoreName").textContent = computerValue;
+  document.getElementById("displayScoreName1").textContent = humanValue;
+  
+  // Display the computer's choice
+  document.getElementById("resOne").textContent = computerChoice;
+  
+  // Check if anyone reached the winning score of 5
+  if (computerValue === 5 || humanValue === 5) {
+    endGame(computerValue === 5 ? "Game Over!" : "Good Game!");
+    document.getElementById("gameOver").classList.add(computerValue === 5 ? "done" : "done1");
+    document.getElementById("new").classList.remove("new");
+    document.getElementById("new").classList.add(computerValue === 5 ? "new2" : "new3");
+  }
 }
