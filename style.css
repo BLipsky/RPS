@@ -84,7 +84,12 @@
   margin-top: 25vw;
 }
 .done {
-  text-shadow: 0vw 0vw 2vw red;
+  text-shadow: 0vw 0vw 2vw rgb(179, 0, 0);
+  font-weight: 700;
+  font-size: 10vw;
+}
+.done1 {
+  text-shadow: 0vw 0vw 2vw rgb(0, 179, 48);
   font-weight: 700;
   font-size: 10vw;
 }
@@ -116,6 +121,8 @@ body {
   padding-bottom: 20vw;
   border-radius: 2vw;
   width: 96%;
+
+  margin-top: 0vw;
 }
 .new2 {
   background-image: radial-gradient(rgb(0, 0, 0), rgb(46, 0, 0), rgb(0, 0, 0));
@@ -134,16 +141,13 @@ body {
   height: 500vw;
 }
 .foot {
-  background-color: white;
   padding: 5vw;
   padding-right: 20vw;
   color: rgb(255, 252, 249);
   border-radius: 100px 100px 100px 100px;
   width: 40%;
   position: absolute;
-  bottom: 0vw;
-  left: 25%;
-  text-align: center;
+  bottom: 0vw;  
 }
 
 .dope {
@@ -181,6 +185,8 @@ ul li a {
   overflow: hidden;
   border: 3px solid #fff;
   z-index: 1;
+  box-shadow: 0vw 0vw 3vw white;
+
 }
 
 ul li a .icon {
@@ -193,6 +199,7 @@ ul li a .icon {
 ul li a:hover .icon {
   color: #fff;
   transform: rotateY(360deg);
+  
 }
 
 ul li a:before {
@@ -225,4 +232,8 @@ ul li:nth-child(2) a:before {
 }
 .gmail {
   background-image: url("gmails.png");
+}
+
+.box {
+
 }

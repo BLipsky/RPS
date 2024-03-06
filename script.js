@@ -64,6 +64,9 @@ function easyOne() {
     document.getElementById("displayScoreName1").textContent = humanValue;
     if (humanValue === 5) {
       endGame("Good Game!");
+      document.getElementById("gameOver").classList.add("done1");
+      document.getElementById("new").classList.remove("new");
+      document.getElementById("new").classList.add("new3");
     }
   }
 
@@ -95,6 +98,10 @@ function hardOne() {
 
     if (computerValue === 5) {
       endGame("Game Over!");
+      document.getElementById("gameOver").classList.add("done");
+      document.getElementById("new").classList.remove("new");
+      document.getElementById("new").classList.add("new2");
+      document.getElementById("new").classList.add("new2");
     }
   }
 
@@ -106,9 +113,6 @@ function endGame(message) {
   document.getElementById("humanRes").classList.add("d-none");
   document.getElementById("lockInButton").classList.add("d-none");
   document.getElementById("gameOver").textContent = message;
-  document.getElementById("gameOver").classList.add("done");
-  document.getElementById("new").classList.remove("new");
-  document.getElementById("new").classList.add("new3");
   document.getElementById("resTwo").classList.add("d-none");
   document.getElementById("try").classList.remove("d-none");
 }
