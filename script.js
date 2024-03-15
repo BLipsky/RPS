@@ -36,7 +36,6 @@ function selectOne() {
     hardOne();
   }
 }
-
 //Display Screen
 
 function display() {
