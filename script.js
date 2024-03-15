@@ -54,6 +54,7 @@ function display() {
   document.getElementById("gameDiv").classList.remove("d-none");
   document.getElementById("new").classList.remove("d-none");
   document.getElementById("bttn").classList.add("d-none");
+  document.getElementById("menu").classList.add("d-none");
 
 }
 
@@ -132,7 +133,7 @@ function endGame(message) {
   document.getElementById("lockInButton").classList.add("d-none");
   document.getElementById("gameOver").textContent = message;
   document.getElementById("resTwo").classList.add("d-none");
-  document.getElementById("try").classList.remove("d-none");
+  document.getElementById("try").classList.remove("d-none"); // Show the "Try Again" button
 }
 
 //Normal Option

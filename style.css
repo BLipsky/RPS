@@ -11,7 +11,7 @@
   color: rgb(0, 55, 133);
   font-weight: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 20vw;
+  height: 10vw;
   background-image: url("btn.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -22,8 +22,7 @@
 }
 
 .res {
-  padding: 2vw;
-  margin-left: 25vw;
+  margin-left: 20vw;
   margin-right: 15vw;
   border-radius: 1vw;
   text-align: center;
@@ -40,42 +39,42 @@
 .topright {
   position: absolute;
   width: 40%;
-  top: 20px;
+  top: 45px;
   left: 5px;
   text-align: center;
 }
 .topright1 {
   position: absolute;
   width: 40%;
-  top: 60px;
+  top: 85px;
   left: 5px;
   text-align: center;
 }
 .topright2 {
   position: absolute;
   width: 40%;
-  top: 100px;
+  top: 125px;
   right: 5px;
   text-align: center;
 }
 .topleft {
   position: absolute;
   width: 40%;
-  top: 20px;
+  top: 45px;
   right: 5px;
   text-align: center;
 }
 .topleft1 {
   position: absolute;
   width: 40%;
-  top: 60px;
+  top: 85px;
   right: 5px;
   text-align: center;
 }
 .topleft2 {
   position: absolute;
   width: 40%;
-  top: 100px;
+  top: 125px;
   left: 5px;
   text-align: center;
 }
@@ -123,7 +122,7 @@ body {
   padding-bottom: 20vw;
   border-radius: 2vw;
   width: 96%;
-  margin-top: 0vw;
+  margin-top: 2vw;
 }
 .new2 {
   background-image: radial-gradient(rgb(0, 0, 0), rgb(46, 0, 0), rgb(0, 0, 0));
@@ -152,9 +151,6 @@ body {
   right: -3%;
 }
 
-.dope {
-  overflow-y: hidden;
-}
 .try {
   background-color: white;
   border: 0.5vw solid gold;
@@ -234,9 +230,6 @@ ul li:nth-child(2) a:before {
 }
 .gmail {
   background-image: url("gmails.png");
-}
-
-.box {
 }
 
 .click {
